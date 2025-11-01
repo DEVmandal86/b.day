@@ -1,0 +1,36 @@
+/* Basic page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Video container styling */
+.video-container {
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+/* Make video responsive */
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Add custom styling for mobile screens */
+@media (max-width: 768px) {
+  .video-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  video {
+    border-radius: 0;
+  }
+}
